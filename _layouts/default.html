@@ -1,51 +1,9 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
+{% include header.html %}
 
-        <!-- <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
-		<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.min.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
 		<div class="container">
 
 		{{ content }}
 
 		</div><!-- /.container -->
 
-        <footer class="site-footer">
-            <ul>
-                <li><a href="mailto:gerrywu@utexas.edu">email</a></li>
-                <li><a href="https://github.com/gges5110">github.com/gges5110</a></li>
-            </ul>
-            <span class="site-footer-owner">
-              <a href="https://github.com/gges5110/Personal-Webpage">Personal-webpage</a> is maintained by <a href="https://github.com/gges5110">gges5110</a>.
-            </span>
-        </footer>
-
-        <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-
-        <script type="text/javascript">
-            try {
-                var pageTracker = _gat._getTracker("UA-66914419-1");
-                pageTracker._trackPageview();
-            } catch(err) {}
-        </script>
-	</body>
-</html>
+{% include footer.html %}
